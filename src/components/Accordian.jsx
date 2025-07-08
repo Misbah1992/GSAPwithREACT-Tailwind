@@ -1,38 +1,31 @@
-
-import React, { useState } from 'react';
-
-const Accordion = ({ title, content }) => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  return (
-    <div style={styles.accordion}>
-      <div
-        onClick={() => setIsOpen(!isOpen)}
-        style={styles.header}
-      >
-        <h3>{title}</h3>
-        <span>{isOpen ? '-' : '+'}</span>
-      </div>
-      {isOpen && <div style={styles.content}>{content}</div>}
-    </div>
-  );
+import React from 'react';
+import { Collapse } from 'antd';
+const text = `
+  A dog is a type of domesticated animal.
+  Known for its loyalty and faithfulness,
+  it can be found as a welcome guest in many households across the world.
+`;
+const items = [
+  {
+    key: '1',
+    label: 'This is panel header 1',
+    children: <p>{text}</p>,
+  },
+  {
+    key: '2',
+    label: 'This is panel header 2',
+    children: <p>{text}</p>,
+  },
+  {
+    key: '3',
+    label: 'This is panel header 3',
+    children: <p>{text}</p>,
+  },
+];
+const Accordion = () => {
+  const onChange = key => {
+    console.log(key);
+  };
+  return <Collapse items={items} defaultActiveKey={['1']} onChange={onChange} />;
 };
-
-const styles = {
-  accordion: {
-    border: '1px solid #ccc',
-    borderRadius: '4px',
-    marginBottom: '10px',
-    padding: '10px',
-  },
-  header: {
-    display: 'flex',
-    justifyContent: 'space-between',
-    cursor: 'pointer',
-  },
-  content: {
-    marginTop: '10px',
-  },
-};
-
 export default Accordion;

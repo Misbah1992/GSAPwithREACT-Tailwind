@@ -2,6 +2,7 @@ import Accordion from "./Accordian"
 
 
 
+
 function FAQ() {
     return (
         <div className="flex flex-col items-center">
@@ -10,7 +11,7 @@ function FAQ() {
             <h1 className="text-gray-800 font-medium text-4xl">Frequently asked questions
             </h1>
             <div className="flex">
-               
+              <Accordion/>
                 <div>
                     <div>Customer Support</div>
                     <div>need Help?</div>
