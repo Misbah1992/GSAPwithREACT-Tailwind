@@ -8,6 +8,12 @@ import bg1 from "./images/bg1.png"
 import Advertisment2 from './components/Advertisement2';
 import ad3 from "./images/ad3.png"
 import ShippingNews from './components/ShippingNews';
+import Info from './components/Info';
+import Stats from './components/Stats';
+import ad4 from "./images/ad4.png"
+import Reviews from './components/Reviews';
+import About2 from './components/About2';
+import FAQ from './components/FAQ';
 
 function App() {
   return (
@@ -18,8 +24,14 @@ function App() {
     <HeroSection/>
     <About/>
     <Sliders/>
-    <Advertisment2 ad3={ad3}/>
+    <Advertisment2 value={ad3}/>
     <ShippingNews/>
+    <Info/>
+    <Stats/>
+     <Advertisment2 value={ad4}/>
+     <Reviews/>
+     <About2/>
+     <FAQ/>
     </div>
   );
 }

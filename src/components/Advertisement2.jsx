@@ -1,9 +1,9 @@
 
 
-function Advertisment2({ad3}) {
+function Advertisment2(img) {
     return (
         <div className="flex w-full justify-center ">
-            <img alt="" src={ad3} className="border rounded-3xl my-12"/>
+            <img alt="" src={img.value} className="border rounded-3xl my-12"/>
         </div>
     );
 }

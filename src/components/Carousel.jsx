@@ -35,7 +35,7 @@ const cardData = [
 ];
 
 const Carousel = () => {
-      const [isHovered, setIsHovered] = useState(false);
+    const [hoveredCardIndex, setHoveredCardIndex] = useState(null);
 
     const [currentIndex, setCurrentIndex] = useState(0);
     const visibleCards = 3;
@@ -57,13 +57,17 @@ const Carousel = () => {
 
 
             <div className="overflow-hidden">
-                <div 
+                <div
+
                     className="flex transition-transform duration-300 ease-in-out"
                     style={{ transform: `translateX(-${currentIndex * (100 / visibleCards)}%)` }}
                 >
                     {cardData.map((data, idx) => (
-                        <div key={idx} className="w-1/3 flex-shrink-0 px-3">
-                            <Cards {...data} />
+                        <div key={idx} className="w-1/3 flex-shrink-0 px-3"
+                            onMouseEnter={() => setHoveredCardIndex(idx)}
+                            onMouseLeave={() => setHoveredCardIndex(null)}
+                        >
+                            <Cards {...data} hoveredCardIndex={hoveredCardIndex} idx={idx} />
                         </div>
                     ))}
                 </div>

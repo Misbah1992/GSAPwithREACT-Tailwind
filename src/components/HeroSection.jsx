@@ -1,6 +1,7 @@
 
 import { Input } from 'antd';
 import { EnvironmentOutlined,SearchOutlined ,CalendarOutlined} from '@ant-design/icons';
+import { BiSearchAlt } from "react-icons/bi";
 
 
 function HeroSection() {
@@ -10,8 +11,8 @@ function HeroSection() {
             <p className="px-96 text-center text-normal font-light mt-6">WorldLog offers a wide range of products, including container tracking and air cargo tracking, that empower shippers and logistics service providers to enhance their supply chain visibility.</p>
             <div className=' mt-16 border rounded-2xl border-gray-30 flex px-12 py-6 pt-10 justify-center items-center space-x-4'>
                 <div className=''>
-                    <div className='border border-gray-300 rounded-lg p-3 relative'>
-                        <p className='bg-white inline-block font-medium absolute px-2 top-0 -m-2  z-10 text-sm text-gray-500'>Origin</p>
+                    <div className='border border-gray-300 rounded-xl p-3 relative'>
+                        <p className='bg-white inline-block font-medium absolute px-2 -top-1 -m-2 left-4  z-10 text-sm text-gray-500'>Origin</p>
                         <div className='flex'>
                             <EnvironmentOutlined style={{color:"#667085"}}/>
                             <Input placeholder="Enter Location" style={{ border: "none" }} />
@@ -19,8 +20,8 @@ function HeroSection() {
                     </div>
                 </div>
                  <div className=''>
-                    <div className='border border-gray-300 rounded-lg p-3 relative'>
-                        <p className='bg-white inline-block font-medium absolute px-2 top-0 -m-2  z-10 text-sm text-gray-500'>Destination</p>
+                    <div className='border border-gray-300 rounded-xl p-3 relative'>
+                        <p className='bg-white inline-block font-medium absolute px-2 -top-1 -m-2 left-4 z-10 text-sm text-gray-500'>Destination</p>
                         <div className='flex'>
                             <EnvironmentOutlined style={{color:"#667085"}}/>
                             <Input placeholder="Enter Location" style={{ border: "none" }} />
@@ -28,8 +29,8 @@ function HeroSection() {
                     </div>
                 </div>
                  <div className=''>
-                    <div className='border border-gray-300 rounded-lg p-3 relative'>
-                        <p className='bg-white inline-block font-medium absolute px-2 top-0 -m-2  z-10 text-sm text-gray-500'>From Date</p>
+                    <div className='border border-gray-300 rounded-xl p-3 relative'>
+                        <p className='bg-white inline-block font-medium absolute px-2 -top-1 -m-2 left-4 z-10 text-sm text-gray-500'>From Date</p>
                         <div className='flex'>
                             <CalendarOutlined style={{color:"#667085"}}/>
                             <Input placeholder="Choose Date" style={{ border: "none" }} />
@@ -37,16 +38,17 @@ function HeroSection() {
                     </div>
                 </div>
                  <div className=''>
-                    <div className='border border-gray-300 rounded-lg p-3 relative'>
-                        <p className='bg-white inline-block font-medium absolute px-2 top-0 -m-2  z-10 text-sm text-gray-500'>To Date</p>
+                    <div className='border border-gray-300 rounded-xl p-3 relative'>
+                        <p className='bg-white inline-block font-medium absolute px-2 -top-1 -m-2 left-4 z-10 text-sm text-gray-500'>To Date</p>
                         <div className='flex'>
                             <CalendarOutlined style={{color:"#667085"}}/>
                             <Input placeholder="Choose Date" style={{ border: "none" }} />
                         </div>
                     </div>
                 </div>
-                <div className='bg-blue-600 rounded-lg py-3 px-4'>
-                    <SearchOutlined  style={{color:"white",fontSize:"2rem"}}/>
+                <div className='bg-blue-500 rounded-lg py-2 px-3'>
+                    {/* <SearchOutlined  style={{color:"white",fontSize:"2rem"}}/> */}
+                      <BiSearchAlt style={{color:"white",fontSize:"2.5rem"}}/>
                 </div>
                
                
