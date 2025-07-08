@@ -1,3 +1,4 @@
+import Accordion from "./Accordian"
 
 
 
@@ -9,7 +10,7 @@ function FAQ() {
             <h1 className="text-gray-800 font-medium text-4xl">Frequently asked questions
             </h1>
             <div className="flex">
-                <div>accordian</div>
+               
                 <div>
                     <div>Customer Support</div>
                     <div>need Help?</div>
