@@ -14,6 +14,7 @@ import ad4 from "./images/ad4.png"
 import Reviews from './components/Reviews';
 import About2 from './components/About2';
 import FAQ from './components/FAQ';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
      <Reviews/>
      <About2/>
      <FAQ/>
+     <Footer/>
     </div>
   );
 }
