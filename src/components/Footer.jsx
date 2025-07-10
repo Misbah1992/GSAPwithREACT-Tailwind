@@ -19,12 +19,12 @@ function Footer() {
                         All rights reserved.</p>
                 </div>
                 <div className="flex space-x-2">
-                    <img alt="" src={Link8} className="h-10 w-10" />
-                    <img alt="" src={Link7} className="h-10 w-10" />
-                    <img alt="" src={Link6} className="h-10 w-10" />
-                    <img alt="" src={Link5} className="h-10 w-10" />
-                    <img alt="" src={Link4} className="h-10 w-10" />
-                    <img alt="" src={Link3} className="h-10 w-10" />
+                    <img alt="" src={Link8} className="h-10 w-10 cursor-pointer" />
+                    <img alt="" src={Link7} className="h-10 w-10 cursor-pointer" />
+                    <img alt="" src={Link6} className="h-10 w-10 cursor-pointer" />
+                    <img alt="" src={Link5} className="h-10 w-10 cursor-pointer" />
+                    <img alt="" src={Link4} className="h-10 w-10 cursor-pointer" />
+                    <img alt="" src={Link3} className="h-10 w-10 cursor-pointer" />
                     <img alt="" src={Link2} className="h-10 pl-6" />
                     <img alt="" src={Link} className="h-10 " />
                 </div>

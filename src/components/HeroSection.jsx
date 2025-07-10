@@ -4,7 +4,6 @@ import { EnvironmentOutlined ,CalendarOutlined} from '@ant-design/icons';
 import { RiSearch2Line } from "react-icons/ri";
 
 
-
 function HeroSection() {
     return (
         <div className="flex flex-col items-center my-32">
@@ -16,7 +15,7 @@ function HeroSection() {
                         <p className='bg-white inline-block font-medium absolute px-2 -top-1 -m-2 left-4  z-10 text-sm text-gray-500'>Origin</p>
                         <div className='flex'>
                             <EnvironmentOutlined style={{color:"#667085"}}/>
-                            <Input placeholder="Enter Location" style={{ border: "none" }} />
+                            <Input placeholder="Enter Location" style={{ border: "none",boxShadow:"none" }} />
                         </div>
                     </div>
                 </div>
@@ -25,7 +24,7 @@ function HeroSection() {
                         <p className='bg-white inline-block font-medium absolute px-2 -top-1 -m-2 left-4 z-10 text-sm text-gray-500'>Destination</p>
                         <div className='flex'>
                             <EnvironmentOutlined style={{color:"#667085"}}/>
-                            <Input placeholder="Enter Location" style={{ border: "none" }} />
+                            <Input placeholder="Enter Location" style={{ border: "none",boxShadow:"none" }} />
                         </div>
                     </div>
                 </div>
@@ -34,7 +33,7 @@ function HeroSection() {
                         <p className='bg-white inline-block font-medium absolute px-2 -top-1 -m-2 left-4 z-10 text-sm text-gray-500'>From Date</p>
                         <div className='flex'>
                             <CalendarOutlined style={{color:"#667085"}}/>
-                            <Input placeholder="Choose Date" style={{ border: "none" }} />
+                            <Input placeholder="Choose Date" style={{ border: "none",boxShadow:"none" }} />
                         </div>
                     </div>
                 </div>
@@ -43,17 +42,13 @@ function HeroSection() {
                         <p className='bg-white inline-block font-medium absolute px-2 -top-1 -m-2 left-4 z-10 text-sm text-gray-500'>To Date</p>
                         <div className='flex'>
                             <CalendarOutlined style={{color:"#667085"}}/>
-                            <Input placeholder="Choose Date" style={{ border: "none" }} />
+                            <Input placeholder="Choose Date" style={{ border: "none" ,boxShadow:"none"}} />
                         </div>
                     </div>
                 </div>
-                <div className='bg-blue-500 rounded-lg py-2 px-3'>
+                <div className='bg-blue-500 rounded-lg py-2 px-3 cursor-pointer'>
                    <RiSearch2Line style={{color:"white",fontSize:"2.5rem"}}/>
-
                 </div>
-               
-               
-
 
             </div>
         </div>

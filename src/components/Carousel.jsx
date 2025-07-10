@@ -75,10 +75,10 @@ const Carousel = () => {
 
             <div className="flex justify-center items-center mt-4 ">
 
-                <div onClick={prev} style={{ height: "3rem", width: "3rem", border: "1px solid white" }} className="bg-blue-500 flex items-center justify-center mx-2 rounded-3xl">
+                <div onClick={prev} style={{ height: "3rem", width: "3rem", border: "1px solid white" }} className="bg-blue-500 flex items-center justify-center mx-2 rounded-3xl cursor-pointer">
                     <img src={VectorArrow2} alt="" />
                 </div>
-                <div onClick={next} style={{ height: "3rem", width: "3rem", border: "1px solid white" }} className=" bg-blue-500 flex items-center justify-center mx-2 rounded-3xl">
+                <div onClick={next} style={{ height: "3rem", width: "3rem", border: "1px solid white" }} className=" bg-blue-500 flex items-center justify-center mx-2 rounded-3xl cursor-pointer">
                     <img src={VectorArrow} alt="" />
                 </div>
             </div>

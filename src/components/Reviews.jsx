@@ -27,7 +27,7 @@ const DATA = [
 
 function Reviews() {
     const [currentIndex, setCurrentIndex] = useState(0);
-        const [fade, setFade] = useState(true);
+    const [fade, setFade] = useState(true);
 
 
     useEffect(() => {
